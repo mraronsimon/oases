@@ -1,4 +1,5 @@
 import { ExecutorContext } from '@nrwl/devkit';
+import * as fs from 'fs';
 
 export interface AstTypeGeneratorOptions {
   descriptorFilePath: string;
@@ -19,6 +20,10 @@ export default async function astTypeGenerator(
   const projectPath = `${context.root}/${
     context.workspace.projects[context.projectName].root
   }`;
+
+  const astDescriptor = JSON.parse(fs.readFileSync(descriptorFilePath).toString());
+
+  console.log(astDescriptor)
 
   return { success: true };
 }

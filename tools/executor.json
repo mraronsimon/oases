@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "ast-type-gen": {
+      "implementation": "./dist/apps/ast-type-gen/main",
+      "schema": "./apps/ast-type-gen/schema.json",
+      "description": "To generate AST node-types"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "type": "object",
+  "cli": "nx",
+  "properties": {
+      "descriptorFilePath": {
+          "type": "string",
+          "description": "Workspace relative path of AST type descriptor"
+      }
+  },
+  "required": ["descriptorFilePath"]
+}

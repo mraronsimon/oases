@@ -9,27 +9,7 @@
       "options": {
         "outputPath": "dist/apps/ast-type-gen",
         "main": "apps/ast-type-gen/src/main.ts",
-        "tsConfig": "apps/ast-type-gen/tsconfig.app.json",
-        "assets": ["apps/ast-type-gen/src/assets"]
-      },
-      "configurations": {
-        "production": {
-          "optimization": true,
-          "extractLicenses": true,
-          "inspect": false,
-          "fileReplacements": [
-            {
-              "replace": "apps/ast-type-gen/src/environments/environment.ts",
-              "with": "apps/ast-type-gen/src/environments/environment.prod.ts"
-            }
-          ]
-        }
-      }
-    },
-    "serve": {
-      "executor": "@nrwl/node:execute",
-      "options": {
-        "buildTarget": "ast-type-gen:build"
+        "tsConfig": "apps/ast-type-gen/tsconfig.app.json"
       }
     },
     "lint": {

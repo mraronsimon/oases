@@ -7,6 +7,7 @@
     "build": "nx build",
     "test": "nx test"
   },
+  "executors": "./executor.json",
   "private": true,
   "dependencies": {
     "tslib": "^2.0.0"

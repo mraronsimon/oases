@@ -3,6 +3,12 @@
   "sourceRoot": "packages/core/types/src",
   "projectType": "library",
   "targets": {
+    "code-gen": {
+      "executor": "./tools:ast-type-gen",
+      "options": {
+        "descriptorFilePath": "packages/core/types/ast.json"
+      }
+    },
     "build": {
       "executor": "@nrwl/node:package",
       "outputs": ["{options.outputPath}"],

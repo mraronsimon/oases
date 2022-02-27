@@ -1,4 +1,6 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "ast-type-gen": "apps/ast-type-gen"
+  }
 }

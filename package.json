@@ -2,7 +2,9 @@
   "name": "oases",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "postinstall": "cd tools && npm ci && npx nx run-many --target=build --all"
+  },
   "private": true,
   "dependencies": {
     "tslib": "^2.0.0"
